@@ -84,7 +84,7 @@ $(function () {
   // This test checks to make sure each feed actually has content
   describe('Initial entries', function () {
 
-
+    // Handle the asynchronicity of loadFeed
     beforeEach(function (done) {
       loadFeed(0, done);
     });
