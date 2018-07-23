@@ -13,7 +13,7 @@
         - [it](#it)
         - [expect](#expect)
       - [Writing a Test Case](#writing-a-test-case)
-  - [Project Overview](#project-overview)
+  - [Project Overview (Original Rubric)](#project-overview-original-rubric)
     - [Why this Project](#why-this-project)
     - [What will I learn](#what-will-i-learn)
     - [How will this help my career](#how-will-this-help-my-career)
@@ -81,11 +81,11 @@ it('are defined', function () {
 
 These are the individual items to be tested. These can be classes, functionality, page content, or really anything you can reference with Javascript.
 
-These are things you're *expecting* to happen, so a test will show an error if it didn't happen the way you describe.
+These are things you're *expecting* to happen, so a test will show an error if it didn't happen the way you describe. You can use `not` to negate the expected result.
 
 ```javascript
-expect(allFeeds).toBeDefined();
-expect(allFeeds.length).not.toBe(0);
+expect(allFeeds).toBeDefined(); // 'allFeeds' (an array, in this case) has to exist
+expect(allFeeds.length).not.toBe(0); // 'allFeeds' cannot have zero elements
 ```
 
 #### Writing a Test Case
@@ -96,7 +96,7 @@ expect(allFeeds.length).not.toBe(0);
 4. Use Jasmine's **matching** syntax to write your `expect` statements.
 
 
-## Project Overview
+## Project Overview (Original Rubric)
 
 In this project you are given a web-based application that reads RSS feeds. The original developer of this application clearly saw the value in testing, they've already included [Jasmine](http://jasmine.github.io/) and even started writing their first test suite! Unfortunately, they decided to move on to start their own company and we're now left with an application with an incomplete test suite. That's where you come in.
 
