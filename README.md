@@ -3,21 +3,21 @@
 ## Contents
 
 - [Feedreader](#feedreader)
-  - [Contents](#contents)
-  - [Introduction](#introduction)
-  - [Dependencies](#dependencies)
-  - [Using Locally](#using-locally)
-    - [Creating a Test](#creating-a-test)
-      - [Understanding the Structure](#understanding-the-structure)
-        - [describe](#describe)
-        - [it](#it)
-        - [expect](#expect)
-      - [Writing a Test Case](#writing-a-test-case)
-  - [Project Overview (Original Rubric)](#project-overview-original-rubric)
-    - [Why this Project](#why-this-project)
-    - [What will I learn](#what-will-i-learn)
-    - [How will this help my career](#how-will-this-help-my-career)
-  - [How will I complete this project](#how-will-i-complete-this-project)
+    - [Contents](#contents)
+    - [Introduction](#introduction)
+    - [Dependencies](#dependencies)
+    - [Using Locally](#using-locally)
+        - [Creating a Test](#creating-a-test)
+            - [Understanding the Structure](#understanding-the-structure)
+                - [describe](#describe)
+                - [it](#it)
+                - [expect](#expect)
+            - [Writing a Test Case](#writing-a-test-case)
+    - [Project Overview (Original Rubric)](#project-overview-original-rubric)
+        - [Why this Project](#why-this-project)
+        - [What will I learn](#what-will-i-learn)
+        - [How will this help my career](#how-will-this-help-my-career)
+    - [How will I complete this project](#how-will-i-complete-this-project)
 
 ## Introduction
 
@@ -94,7 +94,6 @@ expect(allFeeds.length).not.toBe(0); // 'allFeeds' cannot have zero elements
 2. Decide if you want to add to an existing `describe` block, or create a new one.
 3. Decide if you need to further categorize your tests into `it` blocks.
 4. Use Jasmine's **matching** syntax to write your `expect` statements.
-
 
 ## Project Overview (Original Rubric)
 

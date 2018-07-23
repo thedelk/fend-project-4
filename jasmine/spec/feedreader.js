@@ -91,8 +91,7 @@ $(function () {
 
     /* Validates that each feed has at least one entry (i.e. a link) */
     it('have at least one (1) feed entry', function () {
-      // let entryLength = $('.feed .entry-link').length;
-      expect($('.feed .entry-link').length).toBeTruthy();
+      expect($('.feed .entry').length).toBeTruthy();
     });
   });
 
