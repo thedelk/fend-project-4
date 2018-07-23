@@ -117,7 +117,6 @@ $(function () {
     // Compare the html of each feed to ensure the content actually changed
     it('updates (page content changes) when a new feed is loaded', function (done) {
       expect(loadOne).not.toEqual(loadTwo);
-      done();
     });
   });
 }());
