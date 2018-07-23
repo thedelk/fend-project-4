@@ -46,6 +46,15 @@ If all tests are performing well, you should see no errors.
 
 You can create your own tests if you like!
 
+```javascript
+describe('RSS Feeds', function () {
+    it('are defined', function () {
+        expect(allFeeds).toBeDefined();
+        expect(allFeeds.length).not.toBe(0);
+    });
+});
+```
+
 #### Understanding the Structure
 
 ##### describe
