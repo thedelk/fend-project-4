@@ -94,19 +94,9 @@ $(function () {
       // let entryLength = $('.feed .entry-link').length;
       expect($('.feed .entry-link').length).toBeTruthy();
     });
-
-
-    /* Not required, but would be nice to have
-        Needs fixed */
-    // Loops through each feed entry, checking that they have valid URLs
-    // it('have valid URLs', function() {
-    //     allFeeds.forEach(function (feed) {
-    //         expect(feed.url).toMatch(checkURL);
-    //     });
-    //     expect($('.feed .entry-link')).toContain(checkURL);
-    // });
   });
 
+  // This test checks that the feed correctly updates
   describe('New feed selection', function () {
 
     // Preparing variables to hold feed contents for comparison
