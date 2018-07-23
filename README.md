@@ -1,27 +1,113 @@
-# Project Overview
+# Feedreader
+
+## Contents
+
+- [Feedreader](#feedreader)
+  - [Contents](#contents)
+  - [Introduction](#introduction)
+  - [Dependencies](#dependencies)
+  - [Using Locally](#using-locally)
+    - [Creating a Test](#creating-a-test)
+      - [Understanding the Structure](#understanding-the-structure)
+        - [describe](#describe)
+        - [it](#it)
+        - [expect](#expect)
+      - [Writing a Test Case](#writing-a-test-case)
+  - [Project Overview](#project-overview)
+    - [Why this Project](#why-this-project)
+    - [What will I learn](#what-will-i-learn)
+    - [How will this help my career](#how-will-this-help-my-career)
+  - [How will I complete this project](#how-will-i-complete-this-project)
+
+## Introduction
+
+This project's focus was to use the [Jasmine](https://jasmine.github.io) testing suite to write validations against a simple RSS feed application.
+
+There's a [GitHub pages site](https://thedelk.github.io/fend-project-4/) for this repo, but it's a bit useless unless running locally to perform tests.
+
+## Dependencies
+
+The majority of the code was provided by [Udacity](https://github.com/udacity/frontend-nanodegree-feedreader), and a few common external resources were used.
+
+- [Google Fonts](http://handlebarsjs.com)
+- [Handlebars](http://handlebarsjs.com)
+- [Jasmine](https://jasmine.github.io)
+- [jQuery](http://jquery.com)
+
+## Using Locally
+
+To get started with unit testing this bad boy, open up `index.html` in a browser.
+
+You'll see your feedreader app, along with the Jasmine testing at the bottom of the page.
+
+If all tests are performing well, you should see no errors.
+
+### Creating a Test
+
+You can create your own tests if you like!
+
+#### Understanding the Structure
+
+##### describe
+
+Major sections for creating tests. Think of them like a folder.
+
+```javascript
+describe('RSS Feeds', function () {
+    // Related tests ('it' functions) go here
+});
+```
+
+##### it
+
+Subsections of `describe`. These are the things relating to the parent `describe` that you're testing. Each of these may have several specific components to test.
+
+```javascript
+it('are defined', function () {
+    // Specific tests ('expect' functions) go here
+});
+```
+
+##### expect
+
+These are the individual items to be tested. These can be classes, functionality, page content, or really anything you can reference with Javascript.
+
+These are things you're *expecting* to happen, so a test will show an error if it didn't happen the way you describe.
+
+```javascript
+expect(allFeeds).toBeDefined();
+expect(allFeeds.length).not.toBe(0);
+```
+
+#### Writing a Test Case
+
+1. Open `feedreader.js`.
+2. Decide if you want to add to an existing `describe` block, or create a new one.
+3. Decide if you need to further categorize your tests into `it` blocks.
+4. Use Jasmine's **matching** syntax to write your `expect` statements.
+
+
+## Project Overview
 
 In this project you are given a web-based application that reads RSS feeds. The original developer of this application clearly saw the value in testing, they've already included [Jasmine](http://jasmine.github.io/) and even started writing their first test suite! Unfortunately, they decided to move on to start their own company and we're now left with an application with an incomplete test suite. That's where you come in.
 
-
-## Why this Project?
+### Why this Project
 
 Testing is an important part of the development process and many organizations practice a standard of development known as "test-driven development". This is when developers write tests first, before they ever start developing their application. All the tests initially fail and then they start writing application code to make these tests pass.
 
 Whether you work in an organization that uses test-driven development or in an organization that uses tests to make sure future feature development doesn't break existing features, it's an important skill to have!
 
-
-## What will I learn?
+### What will I learn
 
 You will learn how to use Jasmine to write a number of tests against a pre-existing application. These will test the underlying business logic of the application as well as the event handling and DOM manipulation.
 
+### How will this help my career
 
-## How will this help my career?
+- Writing effective tests requires analyzing multiple aspects of an application including the HTML, CSS and JavaScript - an extremely important skill when changing teams or joining a new company.
 
-* Writing effective tests requires analyzing multiple aspects of an application including the HTML, CSS and JavaScript - an extremely important skill when changing teams or joining a new company.
-* Good tests give you the ability to quickly analyze whether new code breaks an existing feature within your codebase, without having to manually test all of the functionality.
+- Good tests give you the ability to quickly analyze whether new code breaks an existing feature within your codebase, without having to manually test all of the functionality.
 
-
-# How will I complete this project?
+## How will I complete this project
 
 Review the Feed Reader Testing [Project Rubric](https://review.udacity.com/#!/projects/3442558598/rubric)
 
@@ -44,5 +130,5 @@ Review the Feed Reader Testing [Project Rubric](https://review.udacity.com/#!/pr
 17. No test should be dependent on the results of another.
 18. Callbacks should be used to ensure that feeds are loaded before they are tested.
 19. Implement error handling for undefined variables and out-of-bound array access.
-20. When complete - all of your tests should pass. 
+20. When complete - all of your tests should pass.
 21. Write a README file detailing all steps required to successfully run the application. If you have added additional tests (for Udacious Test Coverage),  provide documentation for what these future features are and what the tests are checking for.
